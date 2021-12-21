@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rotating Navigation</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="circle-container">
-            <div class="circle">
-                <button id="close">
-                    <i class="fas fa-times"></i>
-                </button>
-                <button id="open">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-        <div class="content">
-            <h1>Amazing Article</h1>
-            <small>Florin Pop</small>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vero eaque debitis ad dolore totam autem
-                nam nisi et quos fugit, modi nostrum repellat laboriosam repellendus obcaecati eum, ducimus tempore.
-                Excepturi amet iste repudiandae laboriosam tempora assumenda dignissimos inventore quia cupiditate
-                quaerat porro alias, ea eaque totam corporis officia necessitatibus pariatur corrupti, cum nemo
-                voluptatibus nihil! Nulla itaque ex repudiandae, animi reiciendis obcaecati possimus expedita. Cumque
-                ex, possimus quidem quo commodi ducimus reiciendis dignissimos unde. Quidem, perferendis saepe? Libero
-                molestias corporis maxime! Iusto natus sequi totam consequuntur pariatur odio optio maxime mollitia.
-                Saepe exercitationem quod perspiciatis soluta cupiditate assumenda sit!</p>
-            <h3>My Dog</h3>
-            <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
-                alt="doggy" />
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quas provident nemo ad mollitia
-                quis, ducimus numquam veniam expedita totam ipsam illum quidem tempora soluta, impedit doloribus
-                consectetur! Pariatur modi hic natus dignissimos ipsam unde autem dolorem quis dolorum, aut ut, dolor
-                iure eius eum consectetur optio quidem esse voluptatibus inventore illum quaerat recusandae! Eius qui
-                repudiandae voluptatum nesciunt fugiat!</p>
-
-        </div>
+      </div>
+      <div class="content">
+        <h1>Amazing Article</h1>
+        <small>John Doe</small>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vero
+          eaque debitis ad dolore totam autem nam nisi et quos fugit, modi
+          nostrum repellat laboriosam repellendus obcaecati eum, ducimus
+          tempore. Excepturi amet iste repudiandae laboriosam tempora assumenda
+          dignissimos inventore quia cupiditate quaerat porro alias, ea eaque
+          totam corporis officia necessitatibus pariatur corrupti, cum nemo
+          voluptatibus nihil! Nulla itaque ex repudiandae, animi reiciendis
+          obcaecati possimus expedita. Cumque ex, possimus quidem quo commodi
+          ducimus reiciendis dignissimos unde. Quidem, perferendis saepe? Libero
+          molestias corporis maxime! Iusto natus sequi totam consequuntur
+          pariatur odio optio maxime mollitia. Saepe exercitationem quod
+          perspiciatis soluta cupiditate assumenda sit!
+        </p>
+        <h3>My Dog</h3>
+        <img
+          src="https://www.thesprucepets.com/thmb/3-kxAtZmAchP9y7PVFH2h1dKxqY=/941x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/adorable-white-pomeranian-puppy-spitz-921029690-5c8be25d46e0fb000172effe.jpg"
+          alt="doggy"
+        />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+          quas provident nemo ad mollitia quis, ducimus numquam veniam expedita
+          totam ipsam illum quidem tempora soluta, impedit doloribus
+          consectetur! Pariatur modi hic natus dignissimos ipsam unde autem
+          dolorem quis dolorum, aut ut, dolor iure eius eum consectetur optio
+          quidem esse voluptatibus inventore illum quaerat recusandae! Eius qui
+          repudiandae voluptatum nesciunt fugiat!
+        </p>
+      </div>
     </div>
     <nav>
-        <ul>
-            <li><i class="fas fa-home"></i>Home</li>
-            <li><i class="fas fa-user-alt"></i>About</li>
-            <li><i class="fas fa-envelope"></i>Contact</li>
-        </ul>
+      <ul>
+        <li><i class="fas fa-home"></i>Home</li>
+        <li><i class="fas fa-user-alt"></i>About</li>
+        <li><i class="fas fa-envelope"></i>Contact</li>
+      </ul>
     </nav>
 
-
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
