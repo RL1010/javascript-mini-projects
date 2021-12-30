@@ -33,7 +33,7 @@ body {
 }
 /*************** global styles **********************/
 
-img:not(.nav-logo) {
+img {
   width: 100%;
   display: block;
 }
@@ -245,7 +245,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--mainGrey);
+  background: var(--offWhite);
   -webkit-transition: var(--mainTransition);
   transition: var(--mainTransition);
   -webkit-box-shadow: var(--lightShadow);
