@@ -21,7 +21,8 @@ a {
   text-decoration: none;
 }
 .container {
-  color: white;
+  color: #fff;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,7 +53,7 @@ a {
   display: flex;
 }
 .deadline-format {
-  margin-right: 1.5rem;
+  margin: auto 1rem;
   width: 5rem;
   height: 5rem;
   display: grid;
