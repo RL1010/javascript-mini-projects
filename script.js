@@ -79,6 +79,14 @@ const projects = [{
         path: 'javascript'
     },
     {
+        name: '21-random-joke',
+        path: 'javascript'
+    },
+    {
+        name: '22-random-user',
+        path: 'javascript'
+    },
+    {
         name: '01-four-card-feature-section',
         path: 'html-css'
     }
