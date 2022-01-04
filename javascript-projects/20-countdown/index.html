@@ -2,54 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Countdown timer</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
-    <section class="section-center">
+    <section class="container">
+      <div class="stars">
+        <img src="./img/bg-stars.svg" alt="stars" />
+      </div>
+      <article class="launch-info">
+        <h1>We're launching on</h1>
+        <h4 class="launch-date"></h4>
+      </article>
+
       <div class="deadline">
         <!-- days -->
         <div class="deadline-format">
-          <div>
-            <h4 class="days">34</h4>
-            <span>days</span>
-          </div>
+          <h4 class="days">34</h4>
+          <span>days</span>
         </div>
         <!-- end of days -->
         <!-- days -->
         <div class="deadline-format">
-          <div>
-            <h4 class="hours">34</h4>
-            <span>hours</span>
-          </div>
+          <h4 class="hours">20</h4>
+          <span>hours</span>
         </div>
         <!-- end of days -->
         <!-- minutes -->
         <div class="deadline-format">
-          <div>
-            <h4 class="minutes">34</h4>
-            <span>mins</span>
-          </div>
+          <h4 class="minutes">16</h4>
+          <span>mins</span>
         </div>
         <!-- end of days -->
-        <!-- minutes -->
+        <!-- seconds -->
         <div class="deadline-format">
-          <div>
-            <h4 class="seconds">34</h4>
-            <span>secs</span>
-          </div>
+          <h4 class="seconds">20</h4>
+          <span>secs</span>
         </div>
         <!-- end of days -->
       </div>
-
-      <!-- info -->
-      <article class="sale-info">
-        <h2><span>50%</span> SALE starts on</h2>
-        <h4 class="sale-date">Sunday, 24 April 2020, 8:00am</h4>
-      </article>
+      <div class="social-icons">
+        <ul>
+          <li><img src="./img/icon-facebook.svg" alt="facebook" /></li>
+          <li><img src="./img/icon-pinterest.svg" alt="pinterest" /></li>
+          <li><img src="./img/icon-instagram.svg" alt="instagram" /></li>
+        </ul>
+      </div>
+      <div class="hills">
+        <img src="./img/pattern-hills.svg" alt="hills" />
+      </div>
+      <script src="./app.js"></script>
     </section>
-    <script src="./app.js"></script>
   </body>
 </html>
