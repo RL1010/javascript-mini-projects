@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&display=swap");
+
+/* Variables*/
+:root {
+  --light-color: #e4f1ff;
+  --dark-color: hsl(205, 86%, 17%);
+  --orange-color: #ff642f;
+  --clr-primary-4: hsl(205, 63%, 48%);
+  --white-color: #fff;
+  --black-color: #222;
+  --font-family: "Playfair Display", serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family);
+  background: var(--light-color);
+  color: var(--dark-color);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-family);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--dark-color);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/*  global classes */
+
+.btn {
+  text-transform: uppercase;
+  background: var(--orange-color);
+  color: var(--white-color);
+  padding: 0.575rem 0.85rem;
+  letter-spacing: var(--spacing);
+  display: block;
+  transition: var(--transition);
+  font-size: 0.975rem;
+  font-weight: bold;
+  border: 2px solid var(--orange-color);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+}
+.btn:hover {
+  color: var(--orange-color);
+  background: var(--light-color);
+  border-color: var(--orange-color);
+}
+/* section */
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 576px) {
+  .section-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 4rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+/* loading */
+.loading {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--light-color);
+  padding-top: 5rem;
+  z-index: 999;
+}
+
+.hide-loading {
+  display: none;
+}
+
+/* search form */
+.search-form {
+  text-align: center;
+  padding-top: 5rem;
+  width: 85vw;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.search-form h2 {
+  font-weight: 900;
+  font-size: 3.2rem;
+}
+
+input {
+  width: 100%;
+  font-size: 1rem;
+  border-color: transparent;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+input {
+  border-radius: var(--radius);
+}
+input::placeholder {
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+
+/* foods */
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+.food {
+  background: var(--light-color);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.food img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+  border: 5px solid var(--white-color);
+  transition: var(--transition);
+  height: 300px;
+  object-fit: cover;
+}
+.food:hover img {
+  transform: scale(1.03);
+  border-color: transparent;
+}
+.food:hover h3 {
+  color: var(--orange-color);
+  transition: var(--transition);
+}
+.food h3 {
+  color: var(--dark-color);
+  padding: 1.5rem 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* single food */
+.single-food {
+  width: 85vw;
+  max-width: var(--max-width);
+  margin: 4rem auto;
+}
+.food-name {
+  margin-bottom: 3rem;
+}
+.food-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border: 5px solid var(--white-color);
+  border-radius: var(--radius);
+}
+@media screen and (min-width: 992px) {
+  .single-food {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+}
+.food-info h3 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+
+.food-ingredients .far {
+  margin-right: 1rem;
+}
+
+.single-food .btn {
+  display: inline-block;
+  margin-top: 2rem;
+}
