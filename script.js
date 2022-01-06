@@ -87,6 +87,10 @@ const projects = [{
         path: 'javascript'
     },
     {
+        name: '23-meals',
+        path: 'javascript'
+    },
+    {
         name: '01-four-card-feature-section',
         path: 'html-css'
     }
