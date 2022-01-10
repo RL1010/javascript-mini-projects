@@ -14,13 +14,7 @@ const displayRecipe = (data) => {
     meal.strIngredient4,
     meal.strIngredient5,
   ];
-  const measures = [
-    meal.strMeasure1,
-    meal.strMeasure2,
-    meal.strMeasure3,
-    meal.strMeasure4,
-    meal.strMeasure5,
-  ]
+
   const img = getElement('.food-img');
   const foodName = getElement('.food-name');
   const description = getElement('.food-desc');

@@ -88,34 +88,3 @@ footer a {
 footer i {
   color: red;
 }
-
-/* 
-.title {
-  margin: 1.5rem auto;
-  text-align: center;
-  color: aliceblue;
-  text-transform: capitalize;
-  text-shadow: 0 1px 1px #000;
-  font-weight: 600;
-}
-
-.links-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 400px;
-  margin: 0 auto;
-}
-.links-container a {
-  list-style: none;
-  text-decoration: none;
-  color: #1c6dd0;
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.5;
-}
-.links-container a:hover {
-  color: #fff;
-  transition: all 0.5s ease-in-out;
-} */

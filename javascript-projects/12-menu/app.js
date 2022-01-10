@@ -114,6 +114,7 @@ const menu = [
   function displayMenuButtons() {
     const categories = menu.reduce(
       function (values, item) {
+        // if there is no such category in the values array then add it
         if (!values.includes(item.category)) {
           values.push(item.category);
         }
@@ -135,7 +136,6 @@ const menu = [
   
     filterBtns.forEach(function (btn) {
       btn.addEventListener("click", function (e) {
-        // console.log(e.currentTarget.dataset);
         const category = e.currentTarget.dataset.id;
         const menuCategory = menu.filter(function (menuItem) {
           // console.log(menuItem.category);

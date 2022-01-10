@@ -7,7 +7,7 @@ const form = getElement('.search-form');
 const input = getElement('[name="meal"]');
 
 form.addEventListener('keyup', function (e) {
-  e.preventDefault();
+  // e.preventDefault();
   const value = input.value;
   if (!value) return;
   showRecipes(`${baseURL}${value}`);
