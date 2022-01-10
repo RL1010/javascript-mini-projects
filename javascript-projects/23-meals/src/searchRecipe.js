@@ -3,6 +3,7 @@ import showRecipes from './showRecipes.js';
 
 const baseURL = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
 
+
 const form = getElement('.search-form');
 const input = getElement('[name="meal"]');
 
