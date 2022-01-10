@@ -14,7 +14,10 @@ const displayRecipe = (data) => {
     meal.strIngredient4,
     meal.strIngredient5,
   ];
+<<<<<<< HEAD
 
+=======
+>>>>>>> c785c2c41e06fc97b59ab20384bf5002c46066ad
   const img = getElement('.food-img');
   const foodName = getElement('.food-name');
   const description = getElement('.food-desc');
